@@ -1,0 +1,281 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+.search input[type="search"] {
+  padding: 10px;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+.add-todo input[type="text"] {
+  padding: 10px;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+.add-todo input[type="text"] {
+  padding: 10px;
+  transition: border 0.3s;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.todo-title {
+  line-height: 4rem;
+}
+
+body {
+  background-color: #f5d5d6;
+  /*background-color: #65ab14;*/
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
+  /*overflow: hidden;*/
+  height: 100%;
+}
+html {
+  height: 100%;
+}
+
+.list {
+  background-color: #f44444;
+}
+
+.button-row > div {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+}
+.button-row > div > a {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(-25px);
+  -moz-transform: translateZ(-25px);
+  -ms-transform: translateZ(-25px);
+  -o-transform: translateZ(-25px);
+  transform: translateZ(-25px);
+  -webkit-transition: -webkit-transform 0.25s;
+  -moz-transition: -moz-transform 0.25s;
+  transition: transform 0.25s;
+}
+.button-row > div > a::before, .button-row > div > a::after {
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  border: 5px solid black;
+  box-sizing: border-box;
+  content: attr(title);
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.button-row > div > a::before {
+  background-color: #000;
+  color: #fff;
+  -webkit-transform: rotateY(0deg) translateZ(25px);
+  -moz-transform: rotateY(0deg) translateZ(25px);
+  -ms-transform: rotateY(0deg) translateZ(25px);
+  -o-transform: rotateY(0deg) translateZ(25px);
+  transform: rotateY(0deg) translateZ(25px);
+}
+.button-row > div > a::after {
+  background-color: #fff;
+  border-color: #000;
+  color: #000;
+  -webkit-transform: rotateX(90deg) translateZ(25px);
+  -moz-transform: rotateX(90deg) translateZ(25px);
+  -ms-transform: rotateX(90deg) translateZ(25px);
+  -o-transform: rotateX(90deg) translateZ(25px);
+  transform: rotateX(90deg) translateZ(25px);
+}
+.button-row > div > a:hover {
+  -webkit-transform: translateZ(-25px) rotateX(-90deg);
+  -moz-transform: translateZ(-25px) rotateX(-90deg);
+  -ms-transform: translateZ(-25px) rotateX(-90deg);
+  -o-transform: translateZ(-25px) rotateX(-90deg);
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+.card-date .header {
+  background-color: #f44444;
+  color: white;
+  padding: 10px;
+  font-size: 40px;
+  transition-timing-function: ease-out;
+  transition: 0.5s;
+}
+
+.header-minified {
+  font-size: 25px !important;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.card-date .container {
+  padding: 10px;
+}
+
+.search input[type=search] {
+  background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+  border: solid 1px #ccc;
+  padding: 9px 10px 9px 32px;
+  width: 55px;
+  
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+  
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+  font-size: 16px;
+}
+
+.done {
+  width: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.checkNom:hover .done{
+  width: 10%;
+  display: block;
+  transition: all 0.4s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+  background-color: green;
+}
+
+.not-done {
+  width: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.checkNom:hover .not-done{
+  width: 10%;
+  display: block;
+  transition: all 0.4s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+  background-color: red;
+}
+
+.slide-completed {
+  width: 100%;
+  display: block;
+  transition: all 0.4s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+  background-color: red;
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+input[type=checkbox] {
+  display: none !important;
+}
+
+.welcomeDiv {
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition-timing-function: ease-out;
+  transition: 0.5s;
+}
+
+.welcomeDiv-show {
+  height: 50px;
+  transition: all 0.4s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+}
+
+.flat-button {
+  position: relative;
+  height: 40px;
+  background: #448aff;
+  margin: 0 auto;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  transition: color .3s;
+  text-align: center;
+  color: #fff;
+}
+
+.flat-button:after {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1f53aa;
+  content: "";
+  z-index: -2;
+  transition: transform .3s;
+}
+
+.flat-button:hover::after {
+  transform: translateY(-80%);
+  transition: transform .3s;
+}
+
+.ht-40 {
+  height: 40px;
+}
+
+.ht-per-85 {
+  height: 85%;
+}
+
+.bg-red {
+  background-color: #ff6465;
+}
+
+.bg-green {
+  background-color: #4bb68f;
+}
+
+.card-5 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
