@@ -1,6 +1,6 @@
 @media (min-width: 200px) and (max-width: 500px) {
   .card-date .header {
-    font-size: 24px;
+    font-size: 20px;
   }
   .todos {
     width: 100%;
@@ -8,6 +8,7 @@
   }
 
   .calender {
+    margin-top: 2rem;
     width: 100%;
   }
 
@@ -39,7 +40,7 @@
   }
 
   .todo-list {
-    height: 65vh;
+    height: 60vh;
   }
 
   .header-minified {

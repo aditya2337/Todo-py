@@ -1,4 +1,4 @@
-@media (min-width: 630px) and (max-width: 760px) {
+@media (min-width: 568px) and (max-width: 760px) {
   .calender {
     width: 40%;
   }
@@ -18,7 +18,7 @@
     width: 250px !important;
   }
   .Cal__MonthList__root {
-    height: 150px !important;
+    height: 100px !important;
   }
 
   .main-window {
@@ -41,4 +41,10 @@
   /*.Cal__Header__root {
     display: none;
   }*/
+}
+
+@media (min-width: 732px) and (max-width: 732px) {
+  .Cal__Container__root {
+    width: 265px !important;
+  }
 }
