@@ -1,0 +1,79 @@
+@media (min-width: 760px) and (max-width: 800px) {
+  .card-date .header {
+    font-size: 30px;
+  }
+  .todos {
+    width: 100%;
+    padding: 0 10px 0 10px;
+  }
+
+  .calender {
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .Cal__Container__root {
+    width: 570px !important;
+    margin: 0 auto;
+  }
+  .Cal__MonthList__root {
+    height: 250px !important;
+  }
+
+  .main-window {
+    margin: 0;
+    width: 100vw;
+  }
+
+  .todo-list {
+    height: 65vh;
+  }
+
+  .header-minified {
+    font-size: 22px !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1030px) {
+  .card-date .header {
+    font-size: 40px;
+  }
+  .todos {
+    width: 100%;
+    padding: 0 10px 0 10px;
+  }
+
+  .calender {
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .Cal__Container__root {
+    width: 770px !important;
+    margin: 0 auto;
+  }
+  .Cal__MonthList__root {
+    height: 250px !important;
+  }
+
+  .main-window {
+    margin: 0;
+    width: 100vw;
+  }
+
+  .todo-list {
+    height: 65vh;
+  }
+
+  .header-minified {
+    font-size: 24px !important;
+  }
+}

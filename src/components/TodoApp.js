@@ -111,9 +111,9 @@ export default class TodoApp extends Component {
     todos = TodoAPI.filterTodos(todos, showCompleted, searchText);
     return (
       <div className=' w-100 h-100 flex flex-column'>
-        <div className="center h-100 w-80">
+        <div className="center main-window h-100 w-80">
           <div className="container h-100 w-100 flex w6 center">
-            <div className='flex items-center w-30'>
+            <div className='flex items-center w-30 calender'>
               <InfiniteCalendar
                 selected={today}
                 className='w-40 card-5'
@@ -122,8 +122,8 @@ export default class TodoApp extends Component {
                 onSelect={(date) => this.handleDateChange(date)}
               />
             </div>
-            <div className='flex z-1 w-70 items-center'>
-              <div className='w-100 card-5 ht-per-85'>
+            <div className='flex z-1 w-70 items-center todos'>
+              <div className='w-100 card-5 ht-per-85 todo-list'>
                 <div className="card-date shdw w-100 h-50 tc ttu">
                   <div className="header h-100" id='header'>
                   <AddTodo onAddTodo={this.handleAddTodo} />

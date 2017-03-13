@@ -1,0 +1,44 @@
+@media (min-width: 630px) and (max-width: 760px) {
+  .calender {
+    width: 40%;
+  }
+  .todos {
+    width: 60%;
+  }
+
+  .card-date .header {
+    font-size: 14px;
+  }
+
+  .header-minified {
+    font-size: 11px !important;
+  }
+
+  .Cal__Container__root {
+    width: 250px !important;
+  }
+  .Cal__MonthList__root {
+    height: 150px !important;
+  }
+
+  .main-window {
+    width: 90%;
+  }
+
+  .todo-list {
+    height: 90%;
+  }
+
+  .card {
+    height: 3rem;
+  }
+
+  .todo-title {
+    line-height: 3rem;
+  }
+
+
+  /*.Cal__Header__root {
+    display: none;
+  }*/
+}

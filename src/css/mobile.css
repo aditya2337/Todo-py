@@ -1,0 +1,48 @@
+@media (min-width: 200px) and (max-width: 415px) {
+  .card-date .header {
+    font-size: 24px;
+  }
+  .todos {
+    width: 100%;
+    padding: 0 10px 0 10px;
+  }
+
+  .calender {
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .Cal__Container__root {
+    width: 270px !important;
+    margin: 0 auto;
+  }
+  .Cal__MonthList__root {
+    height: 150px !important;
+  }
+
+  .Cal__Header__root .Cal__Header__day {
+    display: none;
+  }
+
+  .Cal__Header__root {
+    padding: 10px;
+    min-height: 20px !important;
+  }
+
+  .main-window {
+    margin: 0;
+    width: 100vw;
+  }
+
+  .todo-list {
+    height: 65vh;
+  }
+
+  .header-minified {
+    font-size: 12px !important;
+  }
+}
