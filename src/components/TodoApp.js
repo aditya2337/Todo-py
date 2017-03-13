@@ -127,9 +127,9 @@ export default class TodoApp extends Component {
                 <div className="card-date shdw w-100 h-50 tc ttu">
                   <div className="header h-100" id='header'>
                   <AddTodo onAddTodo={this.handleAddTodo} />
-                  <div className='flex justify-between f3'>
-                    <div className='pointer'>
-                      <i className="fa fa-plus v-mid" aria-hidden="true" onClick={this.handleAdding}></i>
+                  <div className='flex justify-between f3 '>
+                    <div className='pointer top-icons'>
+                      <span className="ion-plus-round" aria-hidden="true" onClick={this.handleAdding}></span>
                     </div>
                     <TodoSearch onSearch={this.handleSearch}/>
                     <div className="tl search" id='demo-2'>

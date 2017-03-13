@@ -26,7 +26,7 @@ export default class TodoSearch extends Component {
         <div className="tc">
           <div>
             <div className='tl h-100 pointer'>
-              <i className="fa fa-check-square-o" aria-hidden="true" onClick={this.handleSearch}></i>
+              <span className="ion-checkmark-round" aria-hidden="true" onClick={this.handleSearch}></span>
             </div>
           </div>
         </div>

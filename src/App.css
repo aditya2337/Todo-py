@@ -1,4 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+@font-face {
+  font-family: junction;
+  src: url(../public/Junction-light.otf);
+}
 .search input[type="search"] {
   padding: 10px;
   transition: box-shadow 0.3s, border 0.3s;
@@ -15,7 +20,9 @@
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  font-family: junction, Helvetica, Arial, sans-serif;
   transition: 0.3s;
+  font-weight: 600;
 }
 
 .card:hover {
@@ -29,7 +36,7 @@
 body {
   background-color: #f5d5d6;
   /*background-color: #65ab14;*/
-  font-family: "Oswald", Helvetica, Arial, sans-serif;
+  font-family: junction, Helvetica, Arial, sans-serif;
   /*overflow: hidden;*/
   height: 100%;
 }
@@ -114,11 +121,15 @@ html {
   transform: translateZ(-25px) rotateX(-90deg);
 }
 
+.card-date {
+  font-family: junction, Helvetica, Arial, sans-serif;
+}
+
 .card-date .header {
   background-color: #f44444;
   color: white;
   padding: 10px;
-  font-size: 40px;
+  font-size: 35px;
   transition-timing-function: ease-out;
   transition: 0.5s;
 }
@@ -278,4 +289,8 @@ input[type=checkbox] {
 
 .card-5 {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.top-icons {
+  font-weight: 50;
 }
